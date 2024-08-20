@@ -3,7 +3,8 @@ import Title from "../shared/Title"
 import Rating from '../shared/Rating'
 import PropTypes from "prop-types"
 
-const ProductDescription = ({ title , rating, price, description }) => {
+const ProductDescription = ({ title, rating, price, description }) => {
+    console.log(rating)
     return (
         <ListGroup>
             <ListGroup.Item>
@@ -12,7 +13,7 @@ const ProductDescription = ({ title , rating, price, description }) => {
             </ListGroup.Item> 
             
             <ListGroup.Item>
-                {/* <Rating rating={rating.rate} numReviews={rating.count}/> */}
+                <Rating rating={rating.rate} numReviews={rating.count}/>
             </ListGroup.Item>
 
             <ListGroup.Item>Price: ${price}

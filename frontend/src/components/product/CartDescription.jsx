@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 import PropTypes from 'prop-types'
 
 
-const CartDescription = (product, addToCart) => {
+const CartDescription = ({product, addToCart}) => {
     return (
         <Card>
             <Card.Body>

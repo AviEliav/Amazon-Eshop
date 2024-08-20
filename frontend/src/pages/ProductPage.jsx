@@ -15,7 +15,7 @@ import CartDescription from "../components/product/CartDescription"
 
 
 const initialState = {
-    loading: false,
+    loading: true,
     error: "",
     product: {},
 }
@@ -52,6 +52,7 @@ const ProductPage = () => {
         navigate("/cart");
     }
 
+    
     return (
         <div>{loading ? (<Loading />) : error ? (
             <MessageBox variant="danger">{error}</MessageBox>
